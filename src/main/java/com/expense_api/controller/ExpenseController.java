@@ -19,7 +19,7 @@ import com.expense_api.service.ExpenseService;
 
 @RestController
 @RequestMapping("/expenses")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = {"*", "https://expense-app-front-end-98eb259ef4b6.herokuapp.com"})
 public class ExpenseController {
 	
 	private final ExpenseService expenseService;
